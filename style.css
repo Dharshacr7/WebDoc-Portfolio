@@ -9,7 +9,9 @@
     font-family: 'Poppins',sans-serif;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --bg-clr: rgb(15, 15, 15);
     --3xl-txt: 5rem;
@@ -57,8 +59,7 @@ nav .logo img:hover{
 }
 
 main{
-    border-bottom: 2px solid var(--sec-txt);
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     padding: 5rem;
     display: flex;
@@ -102,5 +103,169 @@ main .main-btns{
 .main-btns a:hover{
     background-color: var(--main-txt);
     color: var(--bg-clr);
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    place-items: center;
+    height: 50vh;
+    margin-bottom: 4rem;
+}
+section .red{
+    width: 100%;
+    height: 100%;
+    background-color: var(--sec-txt);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.red h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.red:hover{
+    background-color: var(--main-txt);
+    color: var(--bg-clr);
+}
 
+section .green{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-txt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.green h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.green:hover{
+    background-color: var(--sec-txt);
+    color: white;
+}
+
+section a{
+    position: absolute;
+    background-color: var(--bg-clr);
+    bottom: 5%;
+    padding: 5px;
+    border: 2px solid var(--main-txt);
+    color: white;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+section a:hover{
+    background-color: var(--main-txt);
+    color: var(--bg-clr);
+    border: 2px solid var(--bg-clr);
+}
+
+
+.pricings{
+    display: flex;
+    height: 60vh;
+    padding: 3rem;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.price-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+.price-card{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid snow;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    gap: 1rem;
+}
+.price-card ul li{
+    font-weight: 300;
+}
+.price-card:hover{
+    background-color: var(--main-txt);
+    border: none;
+    color: var(--bg-clr);
+}
+.price-card-head {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--sec-txt);
+}
+
+.price-card a{
+    padding: 5px;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s;
+    font-weight: 500;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.price-card a:hover{
+    border: 2px solid var(--bg-clr);
+    color: var(--bg-clr);
+}
+.slash{
+    text-decoration: line-through;
+}
+
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--main-txt);
+    display: flex;
+    padding: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .works{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.socials a{
+    color: var(--sec-txt);
+    font-weight: 500;
+}
+.works a{
+    color: var(--sec-txt);
+    font-weight: 500;
 }
