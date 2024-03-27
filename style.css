@@ -257,8 +257,8 @@ footer .socials{
     gap: 10px;
 }
 footer .image img{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
 }
 .socials a{
@@ -268,4 +268,44 @@ footer .image img{
 .works a{
     color: var(--sec-txt);
     font-weight: 500;
+}
+
+
+
+
+@media screen and (max-width: 426px) {
+    nav .links{
+        gap: 30px;
+    }
+    main{
+        height: 105vh;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .pricings{
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    footer .works{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
